@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZombieGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="gameName">
+        <h1> ZombieGame </h1>
+    </header>
+
+    <header class="Description">
+        <p>
+            <b>ZombieGame</b> - проста гра, мета якої є вижити від зомбі. Але, ця гра дуже складна бо нові хвилі зомбі наступають дуже швидко.
+        </p>
+    </header>
+
+    <header class="Overview">
+        <h2>
+            Що є у грі/що робити
+        </h2>
+
+        <p>
+            Кожні <b>10 секунд</b> наступає нова хвиля зомбі. Кількість зомбі, що з'явиться на новій хвилі визначається за формулою: <b>округлений результат кількості зомбі на 0 хвилі (10) + хвиля на даний момент / 2.</b> Є декілька типів зомбі: <b>звичайний, шкидкий, сильний, злий, гігант і босс.</b> Босс з'являється кожні <b>20</b> хвиль. На 20 хвилі в нього <b>10 тисяч</b> здоров'я, але кожні наступні 20 хвиль його здоров'я збільшується на <b>20 тисяч</b>. 
+        </p>
+
+        <p>
+            У грі також є два типи зброї: <b>гвинтівка і пістолет.</b> Їх можна легко знайти на карті. При натисканні клавіші <b>E</b> біля них, гравець бере зброю в руки. При натисканні <b>ЛКМ</b> зі зброєю в руках, гравець стріляє в напрямку миші, наносячи шкоду зомбі. Перезарядити зброю можна на клавішу <b>R</b>. <br>
+            <img class="img" src="images/Rifle.png" width="15%">
+            <img class="img" src="images/Gun.png" width="15%">
+        </p>
+
+        <p>
+            <b>Будівництво</b> також є важливою частиною гри. У грі можна побудувати 4 структури: <b>звичайну стіну, кутову стіну, трьохсторонню стіну і турель.</b> Стіни будуються тільки з дерева, а турель з дерева і каміння. Зомбі можуть ламати структури. Турель стріляє в зомбі і їх вбиває.
+        </p>
+    </header>
+
+    <header class="Player">
+        <h2>
+            Гравець
+        </h2>
+
+        <p>
+            Гравець має <b>100 здоров'я</b>, рухається зі швидкістю <b>5</b> (при бігу <b>10</b>) і має <b>3 місць</b> в інвентарі. <br>
+            <img class="img" src="images/Player.png" width="15%">
+        </p>
+    </header>
+
+    <header class="Resources">
+        <h2>
+            Ресурси
+        </h2>
+        <p>
+            У грі є два ресурси: <b>дерево</b> і <b>каміння</b>. 
+        </p>
+
+        <p>
+            <b>Дерево.</b> Дерево можна здобувати використовуючи <b>сокиру</b>, яку спочатку потрібно взяти в руки за допомогою клавіші <b>Z</b>. Натиснувши на якесь дерево на карті декілька разів, воно зламається і дасть гравцю <b>2-5</b> дерева. Дерево використовується у <b>будівництві</b> стін і частково у побудові <b>турелі</b>. <br>
+            <img class="img" src="images/Tree.png" width="15%">
+        </p>
+
+        <p>
+            <b>Каміння.</b> Каміння можна здобувати використовуючи <b>кайло</b>, яке спочатку потрібно взяти в руки за допомогою клавіші <b>X</b>. Натиснувши на якийсь камінь на карті декілька разів, він зламається і дасть гравцю <b>2-5</b> каміння. Каміння використовується тільки у <b>будівництві турелі</b>. <br>
+            <img class="img" src="images/Rock.png" width="15%">
+        </p>
+    </header>
+
+    <header class="Buildings">
+        <h2>
+            Будівництво
+        </h2>
+
+        <p>
+            <b>Характеристика будівель:</b> <br>
+            <b>Звачайна стіна:</b> має 50 здоров'я, коштує 10 дерева. <br>
+            <img class="img" src="images/Wall.png" width="15%"> <br>
+            <b>Кутова стіна:</b> має 50 здоров'я, коштує 10 дерева. <br>
+            <img class="img" src="images/CornerWall.png" width="15%"> <br>
+            <b>Трьохстороння стіна:</b> має 200 здоров'я, коштує 15 дерева. <br>
+            <img class="img" src="images/Hideout.png" width="15%"> <br>
+            <b>Турель:</b> 100 здоров'я, коштує 25 дерева і 40 каміння. <br>
+            <img class="img" src="images/Turret.png" width="15%">
+        </p>
+    </header>
+
+        <header class="Zombies">
+        <h2>
+            Зомбі
+        </h2>
+
+        <p>
+            <b>Характеристика зомбі:</b> <br>
+            <b>Звачайний зомбі:</b> 100 здоров'я, швидкість 2 і шкода 10. <br>
+            <img class="img" src="images/zombies/default.png" width="15%"> <br>
+            <b>Сильний зомбі:</b> 700 здоров'я, швидкість 1 і шкода 30. <br>
+            <img class="img" src="images/zombies/strong.png" width="15%"> <br>
+            <b>Швидкий зомбі:</b> 30 здоров'я, швидкість 8 і шкода 5. <br>
+            <img class="img" src="images/zombies/speedy.png" width="15%"> <br>
+            <b>Злий зомбі:</b> 1500 здоров'я, швидкість 3 і шкода 45. <br>
+            <img class="img" src="images/zombies/enraged.png" width="15%"> <br>
+            <b>Гігант зомбі:</b> 2500 здоров'я, швидкість 3 і шкода 50. Також за виглядом більший за інших зомбі, окрім босса. <br>
+            <img class="img" src="images/zombies/giant.png" width="15%"> <br>
+            <b>Босс:</b> 10000 здоров'я (на 20 хвилі. кожні інші 20 хвиль +10000 здоров'я), швидкість 5 і шкода 70. Також за розміром більший за інших зомбі. <br>
+            <img class="img" src="images/zombies/boss.png" width="15%"> <br>
+        </p>
+    </header>
+
+    <header class="Screenshots">
+        <h2>Скріншоти з гри</h2>
+        <p>
+            <img class="img" src="images/screenshot1.png" width="15%">
+            <img class="img" src="images/screenshot2.png" width="15%">
+            <img class="img" src="images/screenshot3.png" width="15%">
+            <br>
+            <img class="img" src="images/screenshot4.png" width="15%">
+            <img class="img" src="images/screenshot5.png" width="15%">
+            <img class="img" src="images/screenshot6.png" width="15%">
+        </p>
+    </header>
+
+    <footer>
+        <h2>
+            <a class="downloadButton" href="game/ZombieGameSetup.zip">Завантажити гру</a>
+        </h2>
+
+        <p>
+            © Андрій Майстрик
+        </p>
+    </footer>
+
+    
+</body>
+</html>

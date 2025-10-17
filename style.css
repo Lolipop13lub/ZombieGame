@@ -1,0 +1,81 @@
+body {
+        background: #b7ffc6;
+        font-family: sans-serif;
+        font-size: large;
+        margin: 0;
+        padding: 0;
+    }
+
+    header.gameName {
+        text-align: center;
+        background: #2A7B9B;
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(236, 236, 236);
+        font-size: 2rem;
+        padding: 2rem 1rem;
+    }
+
+
+    header.Description {
+        background-color: rgb(56, 196, 114);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    header.Overview {
+        background-color: rgb(56, 196, 114);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    header.Player {
+        background-color: rgb(56, 196, 114);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    header.Resources {
+        background-color: rgb(56, 196, 114);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    header.Buildings {
+        background-color: rgb(56, 196, 114);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    header.Zombies {
+        background-color: rgb(56, 196, 114);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    header.Screenshots {
+        background-color: rgb(56, 196, 114);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .img {
+        background-color: rgb(0, 132, 55);
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    footer {
+        padding: 2rem 1rem;
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+        text-align: center;
+    }
+
+    .downloadButton {
+        color: white;
+        background-color: rgb(51, 127, 82);
+        padding: 0.8rem 0.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 20px;
+    }
